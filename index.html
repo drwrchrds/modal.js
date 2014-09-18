@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Model Modal</title>
+    <link rel='stylesheet' href='./modal.css'>
+    <script src="./jquery-1.11.1.js"></script>
+    <script src='./modal.js'></script>
+    
+    
+    <style>
+    body {
+      font-family: Helvetica, sans-serif;
+    }
+    </style>
+  </head>
+  <body>
+    <button class='open-modal'>Open Modal</button>
+    
+    <div id='my-modal' class='modal'>
+      <header>
+        <h1>The Model Modal</h1>
+      </header>
+      
+      <div class='modal-body'>
+        <img src='./zoolander.png'>
+      </div>
+      
+      <footer>
+        <button class='close-modal'>Close</button>
+      </footer>
+    </div>
+    
+    <script>
+      $(function() {
+        $('button.open-modal').on('click', function() {
+          $('#my-modal').modal();
+        })
+      })
+    </script>
+    
+  </body>
+</html>
